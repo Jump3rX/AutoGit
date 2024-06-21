@@ -5,7 +5,7 @@ print("Automate your github commits")
 
 active = True
 while active:
-    choice = int(input("\nSelect action:\n1:Commit files\n2:Exit\n>>"))
+    choice = int(input("\nSelect action:\n1:Commit files\n2.Clone Repository\n0:Exit\n>>"))
     if choice == 1:
         repo_url = input("Enter repo url:\t")
         path_to_file =input("Enter path to file e.g c:\\users\\user\\folder:\t") 
@@ -30,8 +30,8 @@ while active:
             res5 = subprocess.run(['git','remote','add','origin',repo_url])
             print(res5.stdout)
 
-            res = subprocess.run(['git','push','-u','origin','main'])
-            print(res.stdout)
+            res6 = subprocess.run(['git','push','-u','origin','main'])
+            print(res6.stdout)
 
         except subprocess.CalledProcessError as e:
             print(f"An error occurred: {e}")
@@ -41,5 +41,14 @@ while active:
             print(f"An unexpected error occurred: {e}")
         continue
     elif choice == 2:
+        save_path = input("Enter the path to save the files eg c:\\users\\user\\folder: ")
+        clone_url = input("Enter the repo url to clone: ")
+        os.chdir(save_path)
+        res7 = subprocess.run(['git','clone',clone_url])
+        print(res7.stdout)
+        continue
+
+
+    elif choice == 0:
         print("Goodbye!")
         break

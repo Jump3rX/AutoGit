@@ -3,7 +3,7 @@ This is a simple tool to "automate" commits to new repositories. Got tired of ha
 
 # How To Use
 At the moment it is a python script, I intend to make it an executable (.exe) file at a later update.
-1. Install python on your system [here][https://www.python.org/downloads/]
+1. Install python on your system https://www.python.org/downloads/
 2. Navigate to the project file using cmd and type 'python auto_git.py' to run the script.
 
 # Features

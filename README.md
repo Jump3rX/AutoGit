@@ -8,5 +8,5 @@ At the moment it is a python script, I intend to make it an executable (.exe) fi
 
 # Features
 At the moment you can use AutoGit to clone a repo and commit files to a repository.
-- To clone, provide a file path to where you want to files to be saved and the link to the repository you want to clone
+- To clone, provide a file path to where you want to save the files and the link to the repository you want to clone.
 - To commit files, provide a path to the files you wish to commit and the repository url. 

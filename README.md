@@ -4,7 +4,8 @@ This is a python tool to "automate" commits to new repositories, It still need s
 # How To Use
 At the moment it is a python script, I intend to make it an executable (.exe) file at a later update.
 1. Install python on your system https://www.python.org/downloads/
-2. Navigate to the file using cmd and type 'python auto_git.py' to run the script.
+2. Navigate to the file using cmd and type
+``` python auto_git.py``` to run the script.
 
 # Features
 At the moment you can use AutoGit to clone a repo, commit files to new repo and create a branch and commit files.
